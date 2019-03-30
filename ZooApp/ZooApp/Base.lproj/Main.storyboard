@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ZooApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="85e-CX-40M">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="separatorColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellAnimal" rowHeight="149" id="olq-Ec-CWD" customClass="TVCAnimal" customModule="ZooApp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="149"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="olq-Ec-CWD" id="6az-2j-B1w">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="148.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kx6-M4-LkE">
+                                                    <rect key="frame" x="8" y="8" width="359" height="133"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="GKP-Ik-I0U">
+                                                            <rect key="frame" x="117" y="33" width="237" height="92"/>
+                                                            <color key="backgroundColor" red="0.97227032230640986" green="0.97920274172980748" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <mutableString key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</mutableString>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Baboon" translatesAutoresizingMaskIntoConstraints="NO" id="640-b7-qwZ">
+                                                            <rect key="frame" x="7" y="8" width="105" height="117"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="105" id="bgZ-FC-Erq"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gpg-jN-g2I">
+                                                            <rect key="frame" x="120" y="8" width="231" height="21"/>
+                                                            <color key="backgroundColor" red="0.7810345142437769" green="0.76746253265963249" blue="0.83581852791878175" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="21" id="KaM-CS-jOD"/>
+                                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="21" id="hGM-gg-Ao3"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                    <constraints>
+                                                        <constraint firstItem="GKP-Ik-I0U" firstAttribute="top" secondItem="Gpg-jN-g2I" secondAttribute="bottom" constant="4" id="3EX-Ap-JLG"/>
+                                                        <constraint firstItem="GKP-Ik-I0U" firstAttribute="bottom" secondItem="640-b7-qwZ" secondAttribute="bottom" id="3L2-uP-jPu"/>
+                                                        <constraint firstItem="640-b7-qwZ" firstAttribute="leading" secondItem="kx6-M4-LkE" secondAttribute="leading" constant="7" id="3ae-Kt-t5h"/>
+                                                        <constraint firstItem="640-b7-qwZ" firstAttribute="top" secondItem="Gpg-jN-g2I" secondAttribute="top" id="BB8-Yy-mFd"/>
+                                                        <constraint firstItem="640-b7-qwZ" firstAttribute="top" secondItem="kx6-M4-LkE" secondAttribute="topMargin" id="Coj-la-0h7"/>
+                                                        <constraint firstItem="Gpg-jN-g2I" firstAttribute="trailing" secondItem="kx6-M4-LkE" secondAttribute="trailingMargin" id="WPE-5u-yKU"/>
+                                                        <constraint firstItem="GKP-Ik-I0U" firstAttribute="centerX" secondItem="Gpg-jN-g2I" secondAttribute="centerX" id="cWm-ZP-Wq4"/>
+                                                        <constraint firstItem="GKP-Ik-I0U" firstAttribute="leading" secondItem="640-b7-qwZ" secondAttribute="trailing" constant="5" id="efd-TU-BH5"/>
+                                                        <constraint firstItem="GKP-Ik-I0U" firstAttribute="bottom" secondItem="kx6-M4-LkE" secondAttribute="bottomMargin" id="hdX-we-x31"/>
+                                                        <constraint firstItem="Gpg-jN-g2I" firstAttribute="leading" secondItem="640-b7-qwZ" secondAttribute="trailing" constant="8" id="ilD-5l-qTR"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Gpg-jN-g2I" secondAttribute="trailing" constant="8" id="mTf-xJ-Nb6"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.81546242590711282" green="0.82334574688332207" blue="0.87008248730964466" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="kx6-M4-LkE" firstAttribute="leading" secondItem="6az-2j-B1w" secondAttribute="leading" constant="8" id="CZe-IM-Wi2"/>
+                                                <constraint firstItem="kx6-M4-LkE" firstAttribute="top" secondItem="6az-2j-B1w" secondAttribute="top" constant="8" id="r03-Zh-UYP"/>
+                                                <constraint firstAttribute="trailing" secondItem="kx6-M4-LkE" secondAttribute="trailing" constant="8" id="sqF-Tk-U9B"/>
+                                                <constraint firstAttribute="bottom" secondItem="kx6-M4-LkE" secondAttribute="bottom" constant="8" id="xBI-PO-5Oy"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="ivAnimalImage" destination="640-b7-qwZ" id="gGP-JN-3Mi"/>
+                                            <outlet property="laAnimalDes" destination="GKP-Ik-I0U" id="VAh-GY-R4R"/>
+                                            <outlet property="laAnimalName" destination="Gpg-jN-g2I" id="Plj-EF-gEU"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="85e-CX-40M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="DpA-5b-h2O"/>
+                            <constraint firstItem="85e-CX-40M" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="VyO-VY-WwQ"/>
+                            <constraint firstItem="85e-CX-40M" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="mgI-It-iFs"/>
+                            <constraint firstItem="85e-CX-40M" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="u3I-PX-kbi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="tvListAnimals" destination="85e-CX-40M" id="19p-z3-yOX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="118.29085457271366"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Baboon" width="100" height="100"/>
+    </resources>
+</document>
